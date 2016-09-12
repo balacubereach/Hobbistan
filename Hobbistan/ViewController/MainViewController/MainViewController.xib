@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
+            <connections>
+                <outlet property="scrollView" destination="Hpz-Zf-WJR" id="pIh-bQ-Iwf"/>
+                <outlet property="segmentView" destination="prR-8R-WQM" id="hmL-Ub-LoT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="prR-8R-WQM">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                    <color key="backgroundColor" red="0.85098039215686272" green="0.12941176470588237" blue="0.17647058823529413" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hpz-Zf-WJR">
+                    <rect key="frame" x="0.0" y="50" width="600" height="550"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="sCy-1L-2x8"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="prR-8R-WQM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0em-0B-NlU"/>
+                <constraint firstItem="Hpz-Zf-WJR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="2vO-n7-KQA"/>
+                <constraint firstAttribute="bottom" secondItem="Hpz-Zf-WJR" secondAttribute="bottom" id="5ow-29-a8c"/>
+                <constraint firstAttribute="trailing" secondItem="Hpz-Zf-WJR" secondAttribute="trailing" id="7n3-Xm-tL8"/>
+                <constraint firstItem="prR-8R-WQM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HCa-Qb-T9e"/>
+                <constraint firstAttribute="trailing" secondItem="prR-8R-WQM" secondAttribute="trailing" id="JCq-ap-6Xe"/>
+                <constraint firstItem="Hpz-Zf-WJR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Sid-nJ-qwM"/>
+                <constraint firstItem="Hpz-Zf-WJR" firstAttribute="top" secondItem="prR-8R-WQM" secondAttribute="bottom" id="iMt-7z-37a"/>
+            </constraints>
+            <point key="canvasLocation" x="504" y="319"/>
+        </view>
+    </objects>
+</document>

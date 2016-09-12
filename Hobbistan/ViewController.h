@@ -2,9 +2,11 @@
 //  ViewController.h
 //  Hobbistan
 //
-//  Created by UITOUX on 20/07/16.
-//  Copyright © 2016 UITOUX. All rights reserved.
-//
+//  Modified by UITOUX Solutions Pvt Ltd.
+
+
+//  Created by Varun on 10/01/16.
+//  Copyright © 2016 KP Tech. All rights reserved.
 
 #import <UIKit/UIKit.h>
 
